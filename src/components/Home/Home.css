@@ -1,0 +1,67 @@
+   .hero {
+    background-color: #f4f4f4;
+    padding: 100px 0;
+    text-align: center;
+  }
+  
+  .hero .container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .hero h3 {
+    font-weight: 100;
+    letter-spacing: 2px;
+    color: #333;
+  }
+  
+  .hero h1 {
+    font-size: 40px;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+  
+  .hero h1 span {
+    color: #ff014f;
+  }
+  
+  .hero h2 {
+    font-size: 30px;
+    font-weight: bold;
+    margin-top: 20px;
+  }
+  
+  .hero h2 span .custom {
+    color: #ff014f; /* Keep the "a" element color as before */
+  }
+  
+  /* Styles for the Typewriter animation */
+  .hero h2 span .Typewriter {
+    display: inline-block;
+    white-space: nowrap;
+  }
+  
+  /* Adjust the Typewriter animation cursor */
+  .hero h2 span .Typewriter::after {
+    content: "|";
+    animation: blink 1s infinite;
+  }
+  
+  @keyframes blink {
+    50% {
+      opacity: 0;
+    }
+  }
+  
+  /* Responsive styles for smaller screens */
+  @media (max-width: 768px) {
+    .hero h1 {
+      font-size: 30px;
+    }
+  
+    .hero h2 {
+      font-size: 24px;
+    }
+  }
+  

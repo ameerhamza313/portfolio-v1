@@ -1,25 +1,30 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react"
+import Home from "./components/Home/Home"
+import Skills from "./components/Skills/Skills"
+import "./App.css"
+import Navbar from "./components/Navbar/Navbar"
+import { library } from '@fortawesome/fontawesome-svg-core';
+import { faBars, faTimes } from '@fortawesome/free-solid-svg-icons';
+import Projects from "./components/Projects/Projects"
+import Education from "./components/Education/Education"
+import Contact from "./components/Contact/Contact"
+import Footer from "./components/Footer/Footer"
 
-function App() {
+library.add(faBars, faTimes);
+
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+      <Navbar />
+      <Home />
+      <Skills />
+      <Projects />
+      <Education />
+      <Contact />
+      <Footer />
+    </>
+  )
 }
 
-export default App;
+export default App

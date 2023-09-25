@@ -1,0 +1,205 @@
+/* Styles for Portfolio Component */
+.Portfolio {
+  position: relative;
+  background-color: #f4f4f4;
+  padding: 30px 0;
+}
+
+.Portfolio .box {
+  border-radius: 10px;
+  position: relative;
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.Portfolio .box:hover {
+  background: none;
+  transform: translateY(0);
+}
+
+.Portfolio .img {
+  height: 300px;/* Styles for Card Component */
+  .box {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    transition: transform 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    max-width: 300px; /* Adjust the maximum width as needed */
+    margin: 20px; /* Add margin between cards */
+  }
+  
+  .img img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px 10px 0 0;
+  }
+  
+  .title {
+    padding: 20px;
+    flex: 1; /* Allow the title section to grow to fill available space */
+  }
+  
+  .buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-weight: 800;
+    font-size: 16px;
+    margin-top: 20px;
+  }
+  
+  .buttons button {
+    flex: 1;
+    margin: 0 5px;
+    padding: 10px;
+    border: none;
+    background-color: #ff014f;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 768px) {
+    .box {
+      max-width: 100%; /* Make cards full width on small screens */
+      margin: 20px 0; /* Adjust margin for spacing */
+    }
+  
+    .buttons {
+      flex-direction: column; /* Stack buttons vertically on small screens */
+      margin-top: 15px; /* Adjust top margin for spacing */
+    }
+  
+    .buttons button {
+      width: 100%; /* Make buttons full width on small screens */
+      margin: 5px 0; /* Add spacing between buttons */
+    }
+  }
+  
+  overflow: hidden;
+  transition: 0.5s;
+}
+
+.Portfolio img {
+  width: 100%;
+  border-radius: 10px;
+  transition: 0.5s;
+}
+
+.Portfolio .box .img:hover img {
+  transform: scale(1.2);
+}
+
+.Portfolio .category {
+  margin: 20px 0 30px 0;
+  text-transform: uppercase;
+}
+
+.Portfolio .category span {
+  color: #ff014f;
+  font-size: 13px;
+  letter-spacing: 2px;
+  font-weight: 500;
+}
+
+.Portfolio .arrow {
+  position: absolute;
+  right: 30px;
+  bottom: 11%;
+  transform: rotate(-45deg);
+  color: #ff014f;
+  opacity: 0;
+  transition: 0.5s;
+}
+
+.Portfolio .title:hover .arrow {
+  opacity: 1;
+}
+
+.Portfolio .uppercase {
+  text-transform: uppercase;
+}
+
+.Portfolio h2 {
+  font-size: 18px;
+  transition: 0.5s;
+  padding-bottom: 10px;
+}
+
+.Portfolio .technologies {
+  padding-bottom: 10px;
+}
+
+.Portfolio .buttons {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: 800;
+  font-size: 25px;
+}
+
+.Portfolio .buttons button {
+  flex: 1;
+  margin: 0 10px;
+}
+
+.Portfolio .box:hover h2 {
+  color: #ff014f;
+}
+
+.Portfolio .box:hover {
+  color: black;
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .Portfolio .modal,
+  .Portfolio .overlay {
+    overflow: scroll;
+  }
+
+  .Portfolio .modal .modal-img {
+    margin: 50px 0;
+  }
+
+  .Portfolio .modal-content {
+    flex-direction: column;
+  }
+
+  .Portfolio .modal .right,
+  .Portfolio .modal .left {
+    padding: 0;
+  }
+}
+/* Responsive Styles */
+@media (max-width: 768px) {
+  .box {
+    max-width: 100%; /* Adjust the width for smaller screens */
+    display: flex;
+    flex-direction: column;
+  }
+
+  .img {
+    max-width: 100%; /* Make sure the image resizes appropriately */
+    height: auto;
+  }
+
+  .title {
+    padding: 20px; /* Add some spacing */
+  }
+
+  .buttons {
+    flex-direction: column; /* Stack buttons vertically on small screens */
+    margin-top: 15px; /* Adjust top margin for spacing */
+  }
+
+  .buttons button {
+    width: 100%; /* Make buttons full-width on small screens */
+    margin: 5px 0; /* Add spacing between buttons */
+  }
+}
