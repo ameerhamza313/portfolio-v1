@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/ameerhamza313/ameerhamza313.github.io/static/css/main.035ccf0a.css",
-    "main.js": "/ameerhamza313/ameerhamza313.github.io/static/js/main.9219c8af.js",
-    "static/js/787.1ed0c42c.chunk.js": "/ameerhamza313/ameerhamza313.github.io/static/js/787.1ed0c42c.chunk.js",
-    "static/media/contact1.png": "/ameerhamza313/ameerhamza313.github.io/static/media/contact1.8ddfbfd11798f881db54.png",
-    "index.html": "/ameerhamza313/ameerhamza313.github.io/index.html",
-    "main.035ccf0a.css.map": "/ameerhamza313/ameerhamza313.github.io/static/css/main.035ccf0a.css.map",
-    "main.9219c8af.js.map": "/ameerhamza313/ameerhamza313.github.io/static/js/main.9219c8af.js.map",
-    "787.1ed0c42c.chunk.js.map": "/ameerhamza313/ameerhamza313.github.io/static/js/787.1ed0c42c.chunk.js.map"
+    "main.css": "/static/css/main.035ccf0a.css",
+    "main.js": "/static/js/main.ca53a71a.js",
+    "static/js/787.1ed0c42c.chunk.js": "/static/js/787.1ed0c42c.chunk.js",
+    "static/media/contact1.png": "/static/media/contact1.8ddfbfd11798f881db54.png",
+    "index.html": "/index.html",
+    "main.035ccf0a.css.map": "/static/css/main.035ccf0a.css.map",
+    "main.ca53a71a.js.map": "/static/js/main.ca53a71a.js.map",
+    "787.1ed0c42c.chunk.js.map": "/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.035ccf0a.css",
-    "static/js/main.9219c8af.js"
+    "static/js/main.ca53a71a.js"
   ]
 }
