@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import emailjs from "emailjs-com"; 
+import emailjs from "emailjs-com";
 import contact1 from "./contact1.png";
 import "./Contact.css";
 import { FaGithub, FaLinkedin, FaEnvelope } from "react-icons/fa";
@@ -13,16 +13,75 @@ const Contact = () => {
     message: "",
   });
 
+  const [errors, setErrors] = useState({
+    fullname: "",
+    phone: "",
+    email: "",
+    subject: "",
+    message: "",
+  });
+
   const InputEvent = (event) => {
     const { name, value } = event.target;
     setData((prevState) => ({
       ...prevState,
       [name]: value,
     }));
+    // Clear the error message when user starts typing
+    setErrors((prevState) => ({
+      ...prevState,
+      [name]: "",
+    }));
   };
 
   const formSubmit = (event) => {
     event.preventDefault();
+
+    // Form validation
+    let valid = true;
+    const newErrors = {
+      fullname: "",
+      phone: "",
+      email: "",
+      subject: "",
+      message: "",
+    };
+
+    if (data.fullname.trim() === "") {
+      valid = false;
+      newErrors.fullname = "Full name is required";
+    }
+
+    if (data.phone.trim() === "") {
+      valid = false;
+      newErrors.phone = "Phone number is required";
+    }
+
+    if (data.email.trim() === "") {
+      valid = false;
+      newErrors.email = "Email is required";
+    } else {
+      const emailRegex = /^[A-Za-z0-9+_.-]+@(.+)$/;
+      if (!emailRegex.test(data.email)) {
+        valid = false;
+        newErrors.email = "Invalid email address";
+      }
+    }
+
+    if (data.subject.trim() === "") {
+      valid = false;
+      newErrors.subject = "Subject is required";
+    }
+
+    if (data.message.trim() === "") {
+      valid = false;
+      newErrors.message = "Message is required";
+    }
+
+    if (!valid) {
+      setErrors(newErrors);
+      return;
+    }
 
     // Send the email using EmailJS
     emailjs
@@ -117,45 +176,55 @@ const Contact = () => {
                       name="fullname"
                       value={data.fullname}
                       onChange={InputEvent}
+                      required // Make this field mandatory
                     />
+                    <span className="error">{errors.fullname}</span>
                   </div>
                   <div className="input row">
-                    <span>PHONE NUMBER </span>
+                    <span>PHONE NUMBER</span>
                     <input
                       type="tel"
                       name="phone"
                       value={data.phone}
                       onChange={InputEvent}
+                      required // Make this field mandatory
                     />
+                    <span className="error">{errors.phone}</span>
                   </div>
                 </div>
                 <div className="input">
-                  <span>EMAIL </span>
+                  <span>EMAIL</span>
                   <input
                     type="email"
                     name="email"
                     value={data.email}
                     onChange={InputEvent}
+                    required // Make this field mandatory
                   />
+                  <span className="error">{errors.email}</span>
                 </div>
                 <div className="input">
-                  <span>SUBJECT </span>
+                  <span>SUBJECT</span>
                   <input
                     type="text"
                     name="subject"
                     value={data.subject}
                     onChange={InputEvent}
+                    required // Make this field mandatory
                   />
+                  <span className="error">{errors.subject}</span>
                 </div>
                 <div className="input">
-                  <span>YOUR MESSAGE </span>
+                  <span>YOUR MESSAGE</span>
                   <textarea
                     cols="30"
                     rows="10"
                     name="message"
                     value={data.message}
                     onChange={InputEvent}
+                    required // Make this field mandatory
                   ></textarea>
+                  <span className="error">{errors.message}</span>
                 </div>
                 <button className="btn_shadow" type="submit">
                   SEND MESSAGE <i className="fa fa-long-arrow-right"></i>
