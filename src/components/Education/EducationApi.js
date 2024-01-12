@@ -26,13 +26,21 @@ const ResumeApi = [
     {
       id: 4,
       category: "experience",
-      year: "Cubiccode Digital Media LLP (June 2023 - Present) ",
+      year: "Prosoft e-Solutions India Pvt Ltd (Dec 2023 - Present) ",
+      title: "Software Developer",
+      desc: "",
+      rate: "React",
+    },
+    {
+      id: 5,
+      category: "experience",
+      year: "Cubiccode Digital Media LLP (June 2023 - Dec 2023) ",
       title: "Web Developer Intern",
       desc: "",
       rate: "MERN",
     },
     {
-      id: 5,
+      id: 6,
       category: "experience",
       year: "Cleancode - Curiosity iTech Private Limited (January 2023 - June 2023)",
       title: "Full Stack Web Development Course",
@@ -40,7 +48,7 @@ const ResumeApi = [
       rate: "MERN",
     },
     {
-      id: 6,
+      id: 7,
       category: "experience",
       year: "Compsoft Technology Solutions Group Inc (April 2022 - May 2022)",
       title: "Web Development Internship",
