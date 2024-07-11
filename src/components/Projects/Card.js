@@ -15,13 +15,13 @@ const Card = ({ project }) => {
         </div>
         <div className='buttons'>
           <button
-            className='btn_shadow'
+            className='btn btn-shadow'
             onClick={() => window.open(project.githubLink, "_blank")}
           >
             GitHub
           </button>
           <button
-            className='btn_shadow'
+            className='btn btn-shadow'
             onClick={() => window.open(project.liveDemoLink, "_blank")}
           >
             Live Demo
