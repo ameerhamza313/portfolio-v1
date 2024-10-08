@@ -1,7 +1,7 @@
 const Portfolio_data = [
   {
     "id": 1,
-    "image": "/images/eventplaza.png",
+    "image": "./images/eventplaza.png",
     "name": "Event Plaza",
     "description": "A web application for event management.",
     "technologies": ["React", "Node.js", "Express.js"],
@@ -10,7 +10,7 @@ const Portfolio_data = [
   },
   {
     "id": 2,
-    "image": "/images/reciperadar.png",
+    "image": "./images/reciperadar.png",
     "name": "Recipe Radar",
     "description": "A web application for recipe search.",
     "technologies": ["React", "Node.js", "Express.js"],
@@ -19,7 +19,7 @@ const Portfolio_data = [
   },
   {
     "id": 3,
-    "image": "/images/quizzerzest.png",
+    "image": "./images/quizzerzest.png",
     "name": "Quizzer Zest",
     "description": "A web application for quiz management.",
     "technologies": ["React", "Node.js", "Express.js"],
@@ -28,7 +28,7 @@ const Portfolio_data = [
   },
   {
     "id": 4,
-    "image": "/images/registration.png",
+    "image": "./images/registration.png",
     "name": "Registration Form",
     "description": "A web application for form validation.",
     "technologies": ["React", "Node.js"],
@@ -37,7 +37,7 @@ const Portfolio_data = [
   },
   {
     "id": 5,
-    "image": "/images/qrcode.png",
+    "image": "./images/qrcode.png",
     "name": "QR Code Generator",
     "description": "A web application for qr code generation.",
     "technologies": ["HTML", "CSS", "JavaScript"],
@@ -46,7 +46,7 @@ const Portfolio_data = [
   },
   {
     "id": 6,
-    "image": "/images/To-Do.png",
+    "image": "./images/To-Do.png",
     "name": "To-Do List",
     "description": "A web application for task management.",
     "technologies": ["React", "Node.js"],
